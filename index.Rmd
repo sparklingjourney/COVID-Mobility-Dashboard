@@ -2,8 +2,10 @@
 title: "Mobility Amid COVID-19 in U.S."
 output: 
   flexdashboard::flex_dashboard:
+    source_code: https://github.com/sparklingjourney/COVID-Mobility-Dashboard 
     orientation: columns
     vertical_layout: fill
+
 ---
 
 ```{r setup, include=FALSE}
@@ -40,9 +42,9 @@ mi=mean(df_date$Mobility_Index)
 valueBox(value = mi,icon = "fa-car",caption = "Average Mobility Index", color = "green")
 ```
 
-### Note {.no-title}
-> Note: Dashboard is updated near real time with 5 days' lag. 
-> Tip: Data point values could be viewed when hover over visualizations.
+### Tips
+
+Hover over visualizations to view data point values and the toolkit bar for further exploration.
 
 Column {data-width=500}
 --------------------------------------------------------------------
