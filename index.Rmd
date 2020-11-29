@@ -84,7 +84,7 @@ This dashboard application is developed to monitor mobility and COVID-19 develop
 
 ### Date Sources
 
-[Johns Hopkins University](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv), [Descartes Labs](https://raw.githubusercontent.com/descarteslabs/DL-COVID-19/master/DL-us-m50_index.csv), and U.S. Census Bureau 
+[Johns Hopkins University](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv), [Descartes Labs](https://raw.githubusercontent.com/descarteslabs/DL-COVID-19/master/DL-us-m50_index.csv), and U.S. Census Bureau. 
 
 Row {data-width=600}
 --------------------------------------------------
