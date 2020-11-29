@@ -41,7 +41,7 @@ valueBox(value = mi,icon = "fa-car",caption = "Average Mobility Index", color = 
 ```
 
 ### Note {.no-title}
-
+> Note: Dashboard is updated near real time with 5 days' lag. 
 > Tip: Data point values could be viewed when hover over visualizations.
 
 Column {data-width=500}
