@@ -107,7 +107,7 @@ Row {data-width=200}
 
 ### Programming Language, Libraries, and Tools
 
-R, tidyverse, lubridate, plotly, flexdashboard, shinyapps  
+R, tidyverse, lubridate, plotly, and flexdashboard
 
 ### Contact
 
