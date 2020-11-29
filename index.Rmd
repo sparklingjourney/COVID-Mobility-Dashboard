@@ -1,0 +1,114 @@
+---
+title: "Mobility Amid COVID-19 in U.S."
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+source("DataProcessing.R")
+```
+
+
+Dashboard
+====================================================================
+
+Column {data-width=150}
+--------------------------------------------------------------------
+
+### Date
+
+```{r}
+valueBox(value = EndDate,icon = "fa-calendar",caption = "Date", color = "orange")
+```
+
+### Total Confirmed Cases
+
+```{r}
+#df_date
+cc=sum(df_date$Confirmed_Cases_Count)
+valueBox(value = cc,icon = "fa-user",caption = "Total Confirmed Cases", color = "blue")
+```
+
+### Mobility
+
+```{r}
+mi=mean(df_date$Mobility_Index)
+valueBox(value = mi,icon = "fa-car",caption = "Average Mobility Index", color = "green")
+```
+
+### Note {.no-title}
+
+> Tip: Data point values could be viewed when hover over visualizations.
+
+Column {data-width=500}
+--------------------------------------------------------------------
+
+### Motion Scatter Bubble Chart
+
+```{r}
+fig
+```
+
+Column {data-width=300}
+--------------------------------------------------------------------
+
+### Confirmed Cases Map 
+
+```{r}
+fig_cc
+```
+
+
+### Mobility Index Map
+
+```{r}
+fig_mi
+```
+
+About
+===
+
+Row {data-width=200}
+--------------------
+
+### Purpose
+
+This dashboard application is developed to monitor mobility and COVID-19 development in the United States.
+
+
+### Date Sources
+
+[Johns Hopkins University](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv), [Descartes Labs](https://raw.githubusercontent.com/descarteslabs/DL-COVID-19/master/DL-us-m50_index.csv), and U.S. Census Bureau 
+
+Row {data-width=600}
+--------------------------------------------------
+
+### Data Processing
+
+1. __Extract/Aggregate__ values at the state level from each raw dataset;
+2. __Integrate__ raw datasets into one master dataframe _df_;
+3. __Subset__ master dataframe into a new dataframe for the most current date _df_date_;
+4. __Transform__ master dataframe into another new dataframe at the monthly temporal unit _df_m_avg_
+
+### Data Visulization
+
+- __Value Boxes__: Total confirmed cases and mobility index on the latest date displayed
+- __Motion Scatter Bubble Chart__: Monthly average of total confirmed cases and mobility index by state since March 2020. Each bubble is a state colored by region and sized by population.
+- __Choropleth Maps__: Total confirmed cases and mobility index by state on the latest date displayed
+
+Row {data-width=200}
+--------------------------------------------------
+
+### Programming Language, Libraries, and Tools
+
+R, tidyverse, lubridate, plotly, flexdashboard, shinyapps  
+
+### Contact
+
+Feedback of the dashboard is welcomed. Please email author of this application at ayan.qu9@gmail.com.
+
+

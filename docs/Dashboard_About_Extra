@@ -1,0 +1,7 @@
+### Other
+
+The application is built with the [Shiny](http://shiny.rstudio.com) framework for the [R programming language](https://www.r-project.org/). The application layout is produced with the [flexdashboard](http://rstudio.github.io/flexdashboard/index.html) package, and the charts and maps use [Plotly](http://plot.ly), [Leaflet.js](http://leafletjs.com/), [Highcharts](http://www.highcharts.com/), and [ggplot2](http://ggplot2.org/), all accessed through their corresponding R packages.  
+
+Research code for the article is available upon request, and will be formally released this summer as a GitHub repository.  Code for the application is available at <https://github.com/walkerke/neighborhood_diversity>.  
+
+I welcome feedback and suggestions!  [Please visit my personal website](http://personal.tcu.edu/kylewalker/) for contact information or [connect with me on Twitter](https://twitter.com/kyle_e_walker). 
