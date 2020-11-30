@@ -13,10 +13,6 @@ Division <- read_csv("https://raw.githubusercontent.com/cphalpert/census-regions
 
 # Process Data
 
-## Set latest available date
-
-EndDate = as.character(Sys.Date() - 5) 
-
 # 1. MI dataset
 
 ## select data at desired unit of analysis - state

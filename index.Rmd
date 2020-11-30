@@ -11,6 +11,9 @@ output:
 ```{r setup, include=FALSE}
 library(flexdashboard)
 
+## Set latest available date
+EndDate = as.character(Sys.Date() - 4) 
+
 source("DataProcessing.R")
 ```
 
