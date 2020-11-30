@@ -1,6 +1,3 @@
-###
-To deploy updates in Rmd file to Github, run the following codes in GitBash:
-
 git init
 git add *
 git commit -m "init commit"
