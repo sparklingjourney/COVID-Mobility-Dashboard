@@ -15,7 +15,7 @@ Division <- read_csv("https://raw.githubusercontent.com/cphalpert/census-regions
 
 ## Set latest available date
 
-EndDate = as.character(Sys.Date() - 5) 
+EndDate = as.character(Sys.Date() - 4) 
 
 # 1. MI dataset
 
