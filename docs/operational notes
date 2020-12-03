@@ -1,8 +1,8 @@
-###
-To deploy updates in Rmd file to Github, run the following codes in GitBash:
-
 git init
 git add *
 git commit -m "init commit"
 git remote add origin git@github.com:sparklingjourney/COVID-Mobility-Dashboard.git
 git push -u origin main
+
+## 
+if remote change, 'git pull' first
