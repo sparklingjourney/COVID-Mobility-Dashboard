@@ -40,7 +40,7 @@ mi_long$Date <- parse_date_time(mi_long$Date,orders = c("ymd", "mdy","dmy"))
 parse_date_time(EndDate, orders = c("mdy","dmy","ymd"))
 
 month<-substr(EndDate,6,7)
-day<-substr(EndDate,10,10)
+day<-substr(EndDate,9,10)
 year<-substr(EndDate,3,4)
 EndDate_cc=paste(month,day,year,sep='/')
 EndDate_cc

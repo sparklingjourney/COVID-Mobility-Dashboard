@@ -12,7 +12,7 @@ output:
 library(flexdashboard)
 
 ## Set latest available date
-EndDate = as.character(Sys.Date() - 4) 
+EndDate = as.character(Sys.Date() - 8) 
 
 source("DataProcessing.R")
 ```
